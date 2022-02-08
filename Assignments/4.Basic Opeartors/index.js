@@ -12,7 +12,7 @@ console.log(population < 33);
 const description1 =
   country +
   " " +
-  "in it " +
+  "is in " +
   " " +
   continent +
   " " +
@@ -24,3 +24,7 @@ const description1 =
   " " +
   language;
 console.log(description1);
+
+// String Assignment
+const description2 = `${country} is in ${continent} and its ${population} million people speak ${language}!.`;
+console.log(description2);

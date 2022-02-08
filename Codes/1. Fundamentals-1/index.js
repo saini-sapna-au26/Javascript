@@ -57,6 +57,7 @@ s = 22;
 // var y;               no error 
 */
 
+/*
 // Maths operators
 const now = 2031;
 const ageS = now - 1999;
@@ -83,3 +84,47 @@ console.log(ageS > ageP); // >,<,>=,<=
 console.log(ageP >= 18);
 
 console.log(now - 1999 > now - 2020);
+
+
+const now = 2031;
+const ageS = now - 1999;
+const ageP = now - 2020;
+
+console.log(now - 1999 > now - 2020);
+
+let x, y;
+x = y = 5 + 10 - 5;
+console.log(x, y);
+
+// Average
+const Average = (ageS + ageP) / 2;
+console.log(Average);
+*/
+
+// String
+
+const fistName = "Sapna";
+const job = "Software Developer";
+const birthYear = 1999;
+const cunnentYear = 2022;
+const sapna =
+  "I'm " +
+  fistName +
+  ", a " +
+  (cunnentYear - birthYear) +
+  " Year old " +
+  job +
+  " !.";
+const sapnaNew = `I'm ${fistName}, a ${
+  cunnentYear - birthYear
+} year old ${job} !`;
+console.log(sapnaNew);
+console.log(sapna);
+
+console.log("string with \n\
+multiple \n\
+lines"); //for next line we use \n\
+
+console.log(`string
+multiples            
+lines `); // for next line ``
