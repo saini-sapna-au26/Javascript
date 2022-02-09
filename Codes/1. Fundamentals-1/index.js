@@ -102,7 +102,7 @@ console.log(Average);
 */
 
 // String
-
+/*
 const fistName = "Sapna";
 const job = "Software Developer";
 const birthYear = 1999;
@@ -128,3 +128,42 @@ lines"); //for next line we use \n\
 console.log(`string
 multiples            
 lines `); // for next line ``
+*/
+
+// If Else Statement
+// const age = 16;
+
+// if (age >= 18) {
+//   console.log("sapna is ready to drive!.🚗");
+// } else {
+//   const yearLeft = 18 - age;
+//   console.log(`sapna is too young, wait for ${yearLeft} year!.`);
+// }
+
+// const birthYear = 1999;
+// let century;
+// if (birthYear >= 2001) {
+//   century = 20;
+// } else {
+//   century = 19;
+// }
+// console.log(century);
+
+// conerter's
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("sapna"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+//type coercion
+console.log("I am" + 22 + "Year old");
+console.log("23" - "10" - "3");
+console.log("23" / "2");
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
