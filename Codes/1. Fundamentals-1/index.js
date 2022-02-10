@@ -237,3 +237,86 @@ if (height) {
 // !A       RESULT
 //  T          F
 //  F          F
+
+// const hasDriversLicense = true; //A
+// const hasGoodVision = true; //B
+
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log("sapna is able to drive!");
+// } else {
+//   console.log("someone else should drive...");
+// }
+
+// const isTired = false; //c
+// console.log(hasDriversLicense && hasGoodVision && !isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//   console.log("sapna is able to drive!");
+// } else {
+//   console.log("someone else should drive...");
+// }
+
+// switch Statements
+
+// const day = "Monday";
+// switch (day) {
+//   case "Monday":
+//     console.log("1st day of week");
+//     console.log("working day-1");
+//     break;
+//   case "Tuesday":
+//     console.log("2nd day of week");
+//     break;
+//   case "Wednesday":
+//   case "Thursday":
+//     console.log("3rd and 4th day of week");
+//     break;
+//   case "Friday":
+//     console.log("5th and last day of working");
+//     break;
+//   case "Saturday":
+//   case "Sunday":
+//     console.log("This is a last and weekend days");
+//     break;
+//   default:
+//     console.log("Not a valid day!..");
+// }
+
+// if (day === "Monday") {
+//   console.log("1st day of week");
+//   console.log("working day-1");
+// } else if (day === "Tuesday") {
+//   console.log("2nd day of week");
+// } else if (day === "Wednesday" || day === "Thursday") {
+//   console.log("3rd and 4th day of week");
+// } else if (day === "Friday") {
+//   console.log("5th and last day of working");
+// } else if (day === "Saturday" || day === "Sunday") {
+//   console.log("This is a last and weekend days");
+// } else {
+//   console.log("Not a valid day");
+// }
+
+// Conditional or Ternary Opeartaors
+
+const age = 15;
+// age >= 18
+//   ? console.log("I like to drink wine 🍷")
+//   : console.log("I like to drink water 💦 ");
+
+const drink = age >= 18 ? "wine 🍷" : "water 💦";
+console.log(drink); // This is easy way to ringh code in coditioanl opeartors
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine 🍷";
+} else {
+  drink2 = "water 💦";
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💦"}`);
