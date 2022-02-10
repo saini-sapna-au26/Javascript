@@ -150,20 +150,90 @@ lines `); // for next line ``
 // console.log(century);
 
 // conerter's
-const inputYear = "1991";
-console.log(Number(inputYear), inputYear);
-console.log(Number(inputYear) + 18);
+// const inputYear = "1991";
+// console.log(Number(inputYear), inputYear);
+// console.log(Number(inputYear) + 18);
 
-console.log(Number("sapna"));
-console.log(typeof NaN);
+// console.log(Number("sapna"));
+// console.log(typeof NaN);
 
-console.log(String(23), 23);
+// console.log(String(23), 23);
 
-//type coercion
-console.log("I am" + 22 + "Year old");
-console.log("23" - "10" - "3");
-console.log("23" / "2");
+// //type coercion
+// console.log("I am" + 22 + "Year old");
+// console.log("23" - "10" - "3");
+// console.log("23" / "2");
 
-let n = "1" + 1;
-n = n - 1;
-console.log(n);
+// let n = "1" + 1;
+// n = n - 1;
+// console.log(n);
+
+// Truthy and falsy values
+// Falsy values = 0, undefined, '', NaN, null
+// Truthy values = All values are truthy except falsy values.
+/*
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("sapna"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 0; // js automatically convert falsy values into boolean.
+// const money = 100;
+if (money) {
+  console.log("Don't Spend too much money.");
+} else {
+  console.log("get some job!!");
+}
+
+let height; // in this case we didn't defined height so it is falsy values
+if (height) {
+  console.log("YAY! Height is defined!");
+} else {
+  console.log("Height is undefined!");
+}
+*/
+
+// Equality Operators == vs ===
+// === : comparison it is good because it teams as math
+// == : it firstly converted into number then perform like '15' == 15 :- ans is true
+// const age = 18;
+// const age = "18";
+// if (age === 18) console.log("you just became an audult :D (Strict)");
+
+// if (age == 18) console.log("you just became an adult :D (loose)");
+
+//prompt it gave values in browser
+// const favourite = prompt("what's your favourite number ?"); //in firstly numbers convert into string and they result also gave result in string
+// const favourite = Number(prompt("what's your favourite number ?")); // it conerted string into numbers
+// console.log(favourite);
+// console.log(typeof favourite);
+
+// if (favourite === 23) {
+//   //22 === 23 -> False
+//   console.log("cool! 23 is an amzaning number!");
+// } else if (favourite === 7) {
+//   console.log("7 is also a cool numbers");
+// } else {
+//   console.log("number is not 23 or 7");
+// }
+// if (favourite !== 23) console.log("why not 23");
+
+// Basic Boolean logic :- add, or, not
+// AND
+// A         B         RESULT
+// T         T           T
+// T         F           F
+// F         T           F
+// F         F           F
+
+// OR
+// A          B          RESULT
+// T          T           T
+// T          F           T
+// F          T           T
+// F          F           F
+// NOT, !     Inverts true/false values
+// !A       RESULT
+//  T          F
+//  F          F
