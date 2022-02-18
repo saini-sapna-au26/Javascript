@@ -34,15 +34,44 @@
 // 3.Function Declaration vs Expressions
 
 // Function declaration
-function calcAge1(birthYear) {
-  return 2022 - birthYear;
-}
-const age1 = calcAge1(1999);
+// function calcAge1(birthYear) {
+//   return 2022 - birthYear;
+// }
+// const age1 = calcAge1(1999);
 
 // Function expression
-const calcAge2 = function (birthYear) {
-  return 2022 - birthYear;
-};
-const age2 = calcAge2(1997);
+// const calcAge2 = function (birthYear) {
+//   return 2022 - birthYear;
+// };
+// const age2 = calcAge2(1997);
 
-console.log(age1, age2);
+// console.log(age1, age2);
+
+//4. ARROW FUNCTION
+// const calAge3 = (birthyear) => 2022 - birthyear;
+// const age3 = calAge3(1999);
+// console.log(age3);
+
+// const yearOfRetirement = (birthyear, name) => {
+//   const age = 2022 - birthyear;
+//   const retirement = 65 - age;
+// return retirement;
+//   return `${name} is retires in ${retirement} year`;
+// };
+
+// console.log(yearOfRetirement(1999, "sapna"));
+
+//5. Function calling other functions
+
+function cutFruits(fruit) {
+  return fruit * 3;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruits(apples);
+  const orangesPieces = cutFruits(oranges);
+
+  const juice = `juice with ${applePieces} piece of apple and ${orangesPieces} piece of oranges.`;
+  return juice;
+}
+console.log(fruitProcessor(2, 3));
