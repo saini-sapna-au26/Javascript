@@ -40,6 +40,8 @@ console.log(typeof null);
 */
 
 /*
+// 3.LET-CONST-VAR
+
 let age = 23;
 age = 22;
 // let age = 20;      error
@@ -58,6 +60,8 @@ s = 22;
 */
 
 /*
+// 4. OPERATORS
+
 // Maths operators
 const now = 2031;
 const ageS = now - 1999;
@@ -101,8 +105,10 @@ const Average = (ageS + ageP) / 2;
 console.log(Average);
 */
 
-// String
+//5. STRING AND TEMPLATE LITERALS
 /*
+// String
+
 const fistName = "Sapna";
 const job = "Software Developer";
 const birthYear = 1999;
@@ -118,6 +124,7 @@ const sapna =
 const sapnaNew = `I'm ${fistName}, a ${
   cunnentYear - birthYear
 } year old ${job} !`;
+
 console.log(sapnaNew);
 console.log(sapna);
 
@@ -130,7 +137,8 @@ multiples
 lines `); // for next line ``
 */
 
-// If Else Statement
+// 6.If Else Statement
+
 // const age = 16;
 
 // if (age >= 18) {
@@ -149,7 +157,9 @@ lines `); // for next line ``
 // }
 // console.log(century);
 
-// conerter's
+//7.TYPE CONVERSION AND COERCION
+
+//CONVERT'S
 // const inputYear = "1991";
 // console.log(Number(inputYear), inputYear);
 // console.log(Number(inputYear) + 18);
@@ -168,7 +178,8 @@ lines `); // for next line ``
 // n = n - 1;
 // console.log(n);
 
-// Truthy and falsy values
+// 8.Truthy and falsy values
+
 // Falsy values = 0, undefined, '', NaN, null
 // Truthy values = All values are truthy except falsy values.
 /*
@@ -194,7 +205,7 @@ if (height) {
 }
 */
 
-// Equality Operators == vs ===
+// 9. Equality Operators == vs ===
 // === : comparison it is good because it teams as math
 // == : it firstly converted into number then perform like '15' == 15 :- ans is true
 // const age = 18;
@@ -219,7 +230,7 @@ if (height) {
 // }
 // if (favourite !== 23) console.log("why not 23");
 
-// Basic Boolean logic :- add, or, not
+//10. Basic Boolean logic :- add, or, not
 // AND
 // A         B         RESULT
 // T         T           T
@@ -260,7 +271,7 @@ if (height) {
 //   console.log("someone else should drive...");
 // }
 
-// switch Statements
+// 11.switch Statements
 
 // const day = "Monday";
 // switch (day) {
@@ -301,7 +312,7 @@ if (height) {
 //   console.log("Not a valid day");
 // }
 
-// Conditional or Ternary Opeartaors
+// 12.Conditional or Ternary Opeartaors
 
 const age = 15;
 // age >= 18
