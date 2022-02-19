@@ -9,6 +9,7 @@
 // const interface = "Audio";
 // const private = 534;
 
+////////////////////////////////////////////////////////////////
 // 2. FUNCTION
 
 // function logger() {
@@ -31,6 +32,7 @@
 // const orangesJuice = fruitProcessor(2, 3);
 // console.log(orangesJuice);
 
+/////////////////////////////////////////////////////////////////////////////////
 // 3.Function Declaration vs Expressions
 
 // Function declaration
@@ -47,6 +49,7 @@
 
 // console.log(age1, age2);
 
+/////////////////////////////////////////////////////////////////////////////////
 //4. ARROW FUNCTION
 // const calAge3 = (birthyear) => 2022 - birthyear;
 // const age3 = calAge3(1999);
@@ -60,6 +63,8 @@
 // };
 
 // console.log(yearOfRetirement(1999, "sapna"));
+
+/////////////////////////////////////////////////////////////////////////////////
 
 //5. Function calling other functions
 
@@ -77,9 +82,9 @@
 // console.log(fruitProcessor(2, 3));
 
 // Functions ==>
-const calAge = function (birthYear) {
-  return 2037 - birthYear;
-};
+// const calAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
 
 // const yearOfRetirement = function (birthYear, name) {
 //   const age = calAge(birthYear);
@@ -94,18 +99,90 @@ const calAge = function (birthYear) {
 //   }
 // };   //In this case only return statements showing their result because console.log is after the return statements
 
-const yearOfRetirement = function (birthYear, name) {
-  const age = calAge(birthYear);
-  const retirement = 65 - age;
+// const yearOfRetirement = function (birthYear, name) {
+//   const age = calAge(birthYear);
+//   const retirement = 65 - age;
 
-  if (retirement > 0) {
-    console.log(`${name} retires in ${retirement} year`);
-    return retirement;
-  } else {
-    console.log(`${name} has already retired 🎉`);
-    return -1;
-  }
-}; //In this case both return and console statements show their result
+//   if (retirement > 0) {
+//     console.log(`${name} retires in ${retirement} year`);
+//     return retirement;
+//   } else {
+//     console.log(`${name} has already retired 🎉`);
+//     return -1;
+//   }
+// }; //In this case both return and console statements show their result
 
-console.log(yearOfRetirement(1999, "sapna"));
-console.log(yearOfRetirement(1950, "mike"));
+// console.log(yearOfRetirement(1999, "sapna"));
+// console.log(yearOfRetirement(1950, "mike"));
+
+/////////////////////////////////////////////////////////////////////////////////
+//6. ARROWS
+/*
+// How to create arrows
+const friends = ["Karan", "Sukh", "Irfan"];
+console.log(friends);
+
+const years = new Array(1999, 2000, 2022);
+console.log(years);
+
+console.log(friends[0]); //it will show 1st elements eg = karan
+console.log(friends[2]); // irfan
+
+// find the lenght of Arrows
+console.log(friends.length); // lenght of array = 3
+console.log(friends[friends.length - 1]); // irfan last element of array
+console.log(friends[friends.length - 2]); // sukh secondlast element
+
+// Replace from array
+friends[1] = "Rohit";
+console.log(friends);
+
+// We can add strings, digits and values in array as following
+const firstName = "sapna";
+const myArray = [firstName, "saini", 10 - 5, "teacher", 23, friends];
+console.log(myArray);
+console.log(myArray.length);
+
+// Exercise
+const calAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+const year = [1999, 1997, 1996, 2021];
+
+const y1 = calAge(year[0]);
+const y2 = calAge(year[1]);
+const y3 = calAge(year[year.length - 1]);
+console.log(y1, y2, y3);
+
+const y = [calAge(year[0]), calAge(year[1]), calAge(year[year.length - 1])];
+console.log(y);
+/////
+
+const friends = ["sapna", "rohit", "nanu"];
+
+// Add elements
+friends.push("lucky"); // add at end
+
+friends.unshift("kanu"); // add at begining
+console.log(friends);
+
+// Remove elements
+friends.pop(); // remove from end
+
+friends.shift(); // remove from starting/first
+console.log(friends);
+
+// check index of elements
+console.log(friends.indexOf("rohit")); // 1
+console.log(friends.indexOf("menu")); // not present then get -1
+
+// True and False values
+console.log(friends.includes("sapna"));
+console.log(friends.includes("Bob"));
+
+// Example
+if (friends.includes("sapna")) {
+    console.log("You have a friend called sapna");
+}
+*/
+///////////////////////////////////////////////////////////////////////////////////////////////
