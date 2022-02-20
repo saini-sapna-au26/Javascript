@@ -186,3 +186,55 @@ if (friends.includes("sapna")) {
 }
 */
 ///////////////////////////////////////////////////////////////////////////////////////////////
+
+//7. OBJECT
+/* 
+// const myArray = [
+//   "Sapna",
+//   "saini", // this is not a boject
+//   10 - 5,
+//   "teacher",
+//   ["karan", "Rohit", "Nanu"],
+// ];
+
+const myArray = {
+  // object
+  firstName: "Sapna",
+  LastName: "Saini",
+  age: 1999 - 2022,
+  job: "Developer",
+  friends: ["karan", "Rohit", "Nanu"],
+}; // here myArray is a objet where firstname, lastname,age etc is property and sapna,saini-- is values
+console.log(myArray);
+
+console.log(
+  `${myArray.firstName} has ${myArray.friends.length} friends, and his best friend is called ${myArray.friends[1]}`
+);
+
+// with Dot(.)
+console.log(myArray.LastName); //lastname
+
+// with Brackets []
+console.log(myArray["LastName"]);
+
+// exercise
+const interestedIn = prompt(
+  "What do you want to know about sapna? Choose between firstname, lastname, age, job and friends"
+);
+// console.log(interestedIn); // it just gave propeety name not a values
+// console.log(myArray.interestedIn); //it doesn't work becoz myarray doesn't have property interestedin..
+
+console.log(myArray[interestedIn]); //it gave values
+
+if (myArray[interestedIn]) {
+  console.log(myArray[interestedIn]);
+} else {
+  console.log(
+    "wrong request!,What do you want to know about sapna? Choose between firstname, lastname, age, job and friends"
+  );
+}
+// add new property to object
+myArray.location = "Pathankot";
+myArray["Email-ID"] = "sapna98saini@gmail.com";
+console.log(myArray);
+*/
