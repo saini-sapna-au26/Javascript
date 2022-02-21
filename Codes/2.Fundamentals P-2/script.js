@@ -221,7 +221,7 @@ console.log(myArray["LastName"]);
 const interestedIn = prompt(
   "What do you want to know about sapna? Choose between firstname, lastname, age, job and friends"
 );
-// console.log(interestedIn); // it just gave propeety name not a values
+// console.log(interestedIn); // it just gave property name not a values
 // console.log(myArray.interestedIn); //it doesn't work becoz myarray doesn't have property interestedin..
 
 console.log(myArray[interestedIn]); //it gave values
@@ -238,3 +238,4 @@ myArray.location = "Pathankot";
 myArray["Email-ID"] = "sapna98saini@gmail.com";
 console.log(myArray);
 */
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
