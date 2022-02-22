@@ -279,3 +279,90 @@ console.log(myArray.age);
 console.log(myArray.getSummary());
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//8. For loop
+
+// console.log(`lifting weights repetition 1 '🏋️‍♀️`)
+// console.log(`lifting weights repetition 1 '🏋️‍♀️`)
+// console.log(`lifting weights repetition 1 '🏋️‍♀️`)
+// console.log(`lifting weights repetition 1 '🏋️‍♀️`)
+// console.log(`lifting weights repetition 1 '🏋️‍♀️`)
+// console.log(`lifting weights repetition 1 '🏋️‍♀️`)
+// console.log(`lifting weights repetition 1 '🏋️‍♀️`)
+// console.log(`lifting weights repetition 1 '🏋️‍♀️`)
+// console.log(`lifting weights repetition 1 '🏋️‍♀️`)
+// console.log(`lifting weights repetition 1 '🏋️‍♀️`)
+
+// for loop keeps running while condition is true
+// for (let rep = 1; rep <= 30; rep++) {
+//   console.log(`lifting weights repetition ${rep} '🏋️‍♀️`);
+// }
+
+// Looping Arrays, Breaking and Continuing
+/*
+const jonas = [
+  "Sapna",
+  "saini",
+  2022 - 1999,
+  "develper",
+  ["Rohit", "sapna", "nanu"],
+  true,
+];
+const types = [];
+// for (let i = 0; i < 5; i++) {
+//   console.log(jonas[i]);
+// } // it run upto 4times, becz i<5
+
+for (let i = 0; i < jonas.length; i++) {
+  // Reaading from joans array
+  console.log(jonas[i], typeof jonas[i]); // it run till end means 5 times
+
+  //Filling types array
+  // types[i] = typeof jonas[i];
+  types.push(typeof jonas[i]);
+}
+console.log(types);
+
+const year = [1991, 2007, 1969, 2020];
+const ages = [];
+for (let i = 0; i < year.length; i++) {
+  ages.push(2037 - year[i]);
+}
+console.log(ages);
+
+// Continue and Break
+console.log("----ONLY STRINGS ---");
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] !== "string") continue;
+
+  console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log("----BREAK WITH NUMBERS ---");
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] === "number") break;
+
+  console.log(jonas[i], typeof jonas[i]);
+}
+*/
+const jonas = [
+  "Sapna",
+  "saini",
+  2022 - 1999,
+  "develper",
+  ["Rohit", "sapna", "nanu"],
+];
+// 4,3,2...,0
+// upgreade the loops
+for (let i = jonas.length - 1; i >= 0; i--) {
+  console.log(i, jonas[i]);
+}
+
+// loop inside loops
+for (let exercise = 1; exercise <= 3; exercise++) {
+  console.log(`---------Starting exercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: lifting weight repetition ${rep}`);
+  }
+}
