@@ -237,5 +237,45 @@ if (myArray[interestedIn]) {
 myArray.location = "Pathankot";
 myArray["Email-ID"] = "sapna98saini@gmail.com";
 console.log(myArray);
+
+// Object Method
+const myArray = {
+  firstName: "Sapna",
+  LastName: "Saini",
+  birthYear: 1999,
+  job: "Developer",
+  friends: ["karan", "Rohit", "Nanu"],
+  hasDriversLicense: true,
+
+  // calcAge: function(birthYear){
+  //   return 2023 - birthYear;
+  // }
+
+  // calcAge: function () {
+  //   console.log(this); // this function here used for calcage directly
+  //   return 2022 - this.birthYear;
+  // }
+
+  calcAge: function () {
+    this.age = 2022 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${
+      myArray.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+  },
+};
+// console.log(myArray.birthYear(1999));
+// console.log(myArray["calcAge"](1999));
+
+console.log(myArray.calcAge());
+
+console.log(myArray.age);
+console.log(myArray.age);
+console.log(myArray.age);
+
+console.log(myArray.getSummary());
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
