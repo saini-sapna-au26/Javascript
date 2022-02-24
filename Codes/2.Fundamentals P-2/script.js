@@ -344,7 +344,6 @@ for (let i = 0; i < jonas.length; i++) {
 
   console.log(jonas[i], typeof jonas[i]);
 }
-*/
 const jonas = [
   "Sapna",
   "saini",
@@ -361,8 +360,33 @@ for (let i = jonas.length - 1; i >= 0; i--) {
 // loop inside loops
 for (let exercise = 1; exercise <= 3; exercise++) {
   console.log(`---------Starting exercise ${exercise}`);
-
+  
   for (let rep = 1; rep < 6; rep++) {
     console.log(`Exercise ${exercise}: lifting weight repetition ${rep}`);
   }
+}
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+//9. WHILE loop
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`lifting weights repetition ${rep} '🏋️‍♀️`);
+// }
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`while: lifting weight repetition ${rep}`);
+  rep++;
+}
+
+let d = Math.random() * 8;
+console.log(d); // it will gave random number in decimal form.
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+while (dice !== 6) {
+  console.log(`you rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("loop is about to end....");
 }
