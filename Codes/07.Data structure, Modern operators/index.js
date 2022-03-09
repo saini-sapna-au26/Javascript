@@ -362,7 +362,7 @@ restaurant.orderPizza && restaurant.orderPizza("mushroom", "spinach");
 ///////////////////////////////////////////////////////////////////////////////////
 
 // The Nullish Coalescing operators (??)
-
+/*
 const restaurant = {
   name: "Classico Italiano",
   location: "Via Angelo Tavanti 23, Firenze, Italy",
@@ -407,3 +407,38 @@ console.log(guest);
 // Nullish: null and undefined (Not 0 or '')
 const guestCorrect = restaurant.numGuests ?? 10;
 console.log(guestCorrect);
+*/
+/////////////////////////////////////////////////////////////////
+
+// Logical Assignments Operators
+const rest1 = {
+  name: "capri",
+  // numGuests: 20,
+  numGuests: 0,
+};
+
+const rest2 = {
+  name: "La Piazza",
+  owner: "Giovanni Rossi",
+};
+
+// OR assignments operators
+// rest1.numGuests = rest2.numGuests || 10;
+// rest2.numGuests = rest2.numGuests || 10;
+
+// rest1.numGuests ||= 10;
+// rest2.numGuests ||= 10;
+
+// nullish assignments operator (null or undefined)
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
+// And assignments operators
+rest2.owner = rest2.owner && "<ANONYMOUS>"; // replace owner name
+
+rest1.owner &&= "<ANONYMOUS>";
+rest2.owner &&= "<ANONYMOUS>";
+
+console.log(rest1);
+console.log(rest2);
+/////////////////////////////////////////////////////////////
