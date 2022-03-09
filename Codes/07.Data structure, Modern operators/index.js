@@ -134,6 +134,7 @@ const {
 console.log(o, c);
 */
 /////////////////////////////////////////////////////////////////
+/*
 //Spread operator(.....)
 const arr = [7, 8, 9];
 const addNewArr = [1, 2, arr[0], arr[1], arr[2]]; // add in the begining
@@ -293,4 +294,67 @@ restaurant.orderPizza("mushroom");
 */
 ///////////////////////////////////////////////////////////////////////////////
 
-//
+// short circuiting (&& and ||)
+
+// use Any data type, return Any data type, short-circuting
+console.log(3 || "sapna");
+console.log("" || "Sapna");
+console.log(true || 0);
+console.log(undefined || null);
+
+const restaurant = {
+  name: "Classico Italiano",
+  location: "Via Angelo Tavanti 23, Firenze, Italy",
+  categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+  mainMenu: ["Pizaa", "Pasta", "Risotto"],
+  openingHourse: {
+    thu: { open: 12, close: 22 },
+    fri: { open: 11, close: 23 },
+    sat: { open: 0, close: 24 }, //open 24 hrs
+  },
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+
+  orderDelivery: function ({
+    starterIndex = 1,
+    mainIndex = 0,
+    time = "20:00",
+    address,
+  }) {
+    console.log(
+      `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+    );
+  },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`here is your declicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+  },
+
+  orderPizza: function (mainIngredient, ...otherIngredients) {
+    console.log(mainIngredient);
+    console.log(otherIngredients);
+  },
+};
+
+restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+const guest2 = restaurant.numGuests || 10;
+console.log(guest2);
+
+console.log("----&&----");
+console.log(0 && "sapna");
+console.log(7 && "sapna");
+
+console.log("hello" && 23 && null && "sapna");
+
+// real- life example
+if (restaurant.orderPizza) {
+  restaurant.orderPizza("mushroom", "spinach");
+}
+
+restaurant.orderPizza && restaurant.orderPizza("mushroom", "spinach");
