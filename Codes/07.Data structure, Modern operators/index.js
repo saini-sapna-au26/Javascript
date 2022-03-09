@@ -134,7 +134,6 @@ const {
 console.log(o, c);
 */
 /////////////////////////////////////////////////////////////////
-
 //Spread operator(.....)
 const arr = [7, 8, 9];
 const addNewArr = [1, 2, arr[0], arr[1], arr[2]]; // add in the begining
@@ -215,3 +214,83 @@ const restaurantCopy = { ...restaurant };
 restaurantCopy.name = "Ristorante Roma";
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
+*/
+////////////////////////////////////////////////////
+/*
+// Rest Pattern and Parameters
+const restaurant = {
+  name: "Classico Italiano",
+  location: "Via Angelo Tavanti 23, Firenze, Italy",
+  categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+  mainMenu: ["Pizaa", "Pasta", "Risotto"],
+  openingHourse: {
+    thu: { open: 12, close: 22 },
+    fri: { open: 11, close: 23 },
+    sat: { open: 0, close: 24 }, //open 24 hrs
+  },
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+
+  orderDelivery: function ({
+    starterIndex = 1,
+    mainIndex = 0,
+    time = "20:00",
+    address,
+  }) {
+    console.log(
+      `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+    );
+  },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`here is your declicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+  },
+
+  orderPizza: function (mainIngredient, ...otherIngredients) {
+    console.log(mainIngredient);
+    console.log(otherIngredients);
+  },
+};
+
+// 1. Destructuring
+
+// spread, because on Right side of =
+const arr = [1, 2, ...[3, 4]];
+
+// Rest, because on left side of =
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+
+const [pizza, , risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+console.log(pizza, risotto, otherFood);
+
+// Objects
+const { sat, ...weekdays } = restaurant.openingHourse;
+console.log(weekdays);
+
+// 2. Functions
+const add = function (...numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+  console.log(sum);
+
+  // console.log(numbers);
+};
+add(2, 3);
+add(5, 3, 7, 2);
+
+const x = [23, 5, 7];
+add(...x);
+
+restaurant.orderPizza("mushrooms", "onion", "olives", "spinach");
+restaurant.orderPizza("mushroom");
+*/
+///////////////////////////////////////////////////////////////////////////////
+
+//
