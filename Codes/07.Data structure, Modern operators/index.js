@@ -615,7 +615,7 @@ for (const [key, { open, close }] of entries) {
 }
 */
 ////////////////////////////////////////////////////////////////////////////////////
-
+/*
 // SETS
 const orderSet = new Set([
   "Pasta",
@@ -665,3 +665,49 @@ console.log(
 );
 
 console.log(new Set("sapnasaini").size);
+*/
+/////////////////////////////////////////////////////////////////////////////////////
+
+// Maps fundaments
+const rest = new Map();
+rest.set("name", "Classico Italiano");
+rest.set(1, "firenze, Italy");
+console.log(rest.set(2, "Lisbon, Portugal"));
+
+rest
+  .set("Categories", ["Italian", "Pizzeria", "Vegetarian", "Organic"])
+  .set("open", 11)
+  .set("close", 23)
+  .set(true, "we are open")
+  .set(false, "we are closed");
+
+console.log(rest.get("name"));
+console.log(rest.get(true));
+console.log(rest.get(1));
+
+const time = 21;
+console.log(rest.get(time > rest.get("open") && time < rest.get("close")));
+
+//delete
+console.log(rest.has("categories"));
+rest.delete(2);
+// console.log(rest);
+
+// clear
+// rest.clear();
+
+// size of array in map
+// console.log(rest);
+// console.log(rest.size);
+
+// rest.set([1, 2], "Test");
+// console.log(rest);
+// console.log(rest.size);
+
+const arr = [1, 2];
+rest.set(arr, "Test");
+rest.set(document.querySelector("h1"), "Heading");
+console.log(rest);
+console.log(rest.size);
+
+console.log(rest.get(arr));
