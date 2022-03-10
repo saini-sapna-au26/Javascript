@@ -586,7 +586,7 @@ else console.log("user array empty");
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Looping object: objecT keys, object values, object entries
-
+/*
 // Property names
 const properties = Object.keys(openingHours);
 console.log(properties);
@@ -613,3 +613,55 @@ const entries = Object.entries(openingHours);
 for (const [key, { open, close }] of entries) {
   console.log(`On ${key} we open at ${open} and close at ${close}`);
 }
+*/
+////////////////////////////////////////////////////////////////////////////////////
+
+// SETS
+const orderSet = new Set([
+  "Pasta",
+  "Pizza",
+  "Pizza",
+  "Risotto",
+  "Pasta",
+  "Pizza",
+]);
+
+console.log(orderSet); // duplicates gone
+
+// sets has no index and no need of get data
+
+// keep srting diff - diff
+console.log(new Set("Sapna"));
+
+// size of sets
+console.log(orderSet.size);
+
+// has means elements presend in sets or not
+console.log(orderSet.has("Pizza"));
+console.log(orderSet.has("Bread"));
+
+// add elements in sets
+orderSet.add("Garlic Bread");
+orderSet.add("Garlic Bread");
+console.log(orderSet);
+
+// Delete sets
+orderSet.delete("Risotto");
+console.log(orderSet);
+
+// clear
+// orderSet.clear();
+// console.log(orderSet);
+
+for (const order of orderSet) console.log(order);
+
+//Example
+const staff = ["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"];
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+
+console.log(
+  new Set(["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"]).size
+);
+
+console.log(new Set("sapnasaini").size);
