@@ -1,5 +1,5 @@
 "Use strict";
-
+/*
 // Default parameters
 const bookings = [];
 
@@ -61,6 +61,38 @@ const newPassport = function (person) {
 
 newPassport(sapna);
 checkIn(flight, sapna);
+*/
 ///////////////////////////////////////////////////////////////////////
 
 //First-class and Higher-older Functions
+//Notes
+//////////////////////////////////////////////
+
+// Functions Accepting callback functions
+const oneWord = function (str) {
+  return str.replace(/ /g, "").toLowerCase();
+};
+
+const upperFirstsWord = function (str) {
+  const [first, ...others] = str.split("");
+  return [first.toUpperCase(), ...others].join("");
+};
+
+// Higher-order function
+const transformer = function (str, fn) {
+  console.log(`Original string: ${str}`);
+  console.log(`Transformed by: ${fn(str)}`);
+
+  console.log(`Transformed by: ${fn.name}`);
+};
+
+transformer("Javscript is the best!", upperFirstsWord);
+transformer("Javascript is the best!", oneWord);
+
+// js user callbacks all the time
+
+const high5 = function () {
+  console.log("👋");
+};
+document.body.addEventListener("click", high5);
+["Jonas", "Martha", "Adam"].forEach(high5);
