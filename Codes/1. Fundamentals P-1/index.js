@@ -159,7 +159,7 @@ lines `); // for next line ``
 
 //7.TYPE CONVERSION AND COERCION
 
-//CONVERT'S
+//CONVersion's
 // const inputYear = "1991";
 // console.log(Number(inputYear), inputYear);
 // console.log(Number(inputYear) + 18);
@@ -171,7 +171,7 @@ lines `); // for next line ``
 
 // //type coercion
 // console.log("I am" + 22 + "Year old");
-// console.log("23" - "10" - "3");
+// console.log("23" - "10" - 3);
 // console.log("23" / "2");
 
 // let n = "1" + 1;
