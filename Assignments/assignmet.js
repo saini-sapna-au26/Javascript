@@ -172,6 +172,21 @@ Canada :D)
 //   console.log("This country is not right for you!...");
 // }
 //////////////////////////////////////////////////////////////////////////////////////////////
+// LECTURE: Functions
+// 1. Write a function called 'describeCountry' which takes three parameters:
+// 'country', 'population' and 'capitalCity'. Based on this input, the
+// function returns a string with this format: 'Finland has 6 million people and its
+// capital city is Helsinki'
+// 2. Call this function 3 times, with input data for 3 different countries. Store the
+// returned values in 3 different variables, and log them to the console
+
+function describeCountry(country, population, capitalCity) {
+  return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+}
+console.log(describeCountry("India", 138, "Delhi"));
+const res = describeCountry("Landon", 6, "NewYork");
+console.log(res);
+//////////////////////////////////////////////////////////////////////////////////////////////////
 // alert("sapna saini");
 // let
 // let a = 30;
@@ -185,6 +200,20 @@ Canada :D)
 // name = "sapna";
 // b = 2;
 // console.log(a, name, b);
+
+// Functions
+// function f1() {
+//   console.log("Hii, This side sapna here...");
+// }
+// f1();
+
+// // Functions with parameters
+// function f2(n1, n2) {
+//   console.log(n1, n2);
+//   const add = `The sum of ${n1} + ${n2} is ${n1 + n2}`;
+//   return add;
+// }
+// console.log(f2(2, 4));
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // coding challenges
 /*
@@ -262,15 +291,15 @@ Test data:
 § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 */
-const scoreDolphins = (96 + 108 + 89) / 3;
-const scoreKoalas = (88 + 91 + 110) / 3;
-console.log(scoreDolphins, scoreKoalas);
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+// console.log(scoreDolphins, scoreKoalas);
 
-if (scoreDolphins > scoreKoalas) {
-  console.log("Dolphins have higher score..");
-} else if (scoreDolphins < scoreKoalas) {
-  console.log("Koalas have higher score..");
-} else if (scoreDolphins === scoreKoalas) {
-  console.log("Both have equal scores...");
-}
+// if (scoreDolphins > scoreKoalas) {
+//   console.log("Dolphins have higher score..");
+// } else if (scoreDolphins < scoreKoalas) {
+//   console.log("Koalas have higher score..");
+// } else if (scoreDolphins === scoreKoalas) {
+//   console.log("Both have equal scores...");
+// }
 ////////////////////////////////////////////////////////////////////////////////////
